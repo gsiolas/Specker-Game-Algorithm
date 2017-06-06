@@ -5,8 +5,11 @@ The conditions of the game are initialized in main.cpp, where the number of star
 There have been implemented 4 kind of player strategies:
 
 <u>Greedy:</u> A Greedy player chooses the heap with the most coins (chooses the lower Heap ID in case of equality), removes all coins from the heap and puts nothing back to other heaps.
+
 <u>Spartan:</u> A Spartan player chooses the heap with the most coins (chooses the lower Heap ID in case of equality) and removes one coin from it.
+
 <u>Sneaky:</u> A Sneaky player chooses the heap with the least amount of coins (chooses the lower Heap ID in case of equality), removes all coins from the heap and puts nothing back to other heaps.
+
 <u>Righteous:</u> A Righteous player chooses the heap with the most coins (chooses the lower Heap ID in case of equality), removes half of it ( heap_coins/2 ) and puts (heap_coins/2 - 1) to the heap with the least amount of coins.
 
 The player to win is the last one who was able to play.
